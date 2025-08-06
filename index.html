@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document bien</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+
+    <nav class="sticky top-0 z-50 bg-blue-200 dark:bg-blue-900">
+        <div class="container flex flex-col items-center p-6 mx-auto">
+            <a href="#section-Inicio" class="mx-auto">
+                <img class="w-auto h-10 sm:h-12 max-h-12" src="IMG/logo-con-nombre-derecha.png" alt="">
+            </a>
+
+            <div class="flex items-center justify-center mt-6 text-gray-600 capitalize dark:text-gray-300">
+                <a href="#section-Inicio" class="mx-2 text-gray-800 border-b-2 border-blue-500 dark:text-gray-200 sm:mx-6">Inicio</a>
+                <a href="#section-SobreNostros" class="mx-2 border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 sm:mx-6">Sobre Nosotros</a>
+                <a href="#section-Servicios" class="mx-2 border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 sm:mx-6">Servicios</a>
+                <a href="#section-Contacto" class="mx-2 border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 sm:mx-6">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <header class="bg-white dark:bg-gray-900">
+    <div id="section-Inicio" class="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
+
+        <!-- Botones (control de slides) -->
+        <div class="flex justify-center order-2 mt-6 lg:mt-0 lg:space-y-3 lg:flex-col">
+        <button class="w-3 h-3 mx-2 bg-blue-500 rounded-full lg:mx-0 focus:outline-none" data-slide="0"></button>
+        <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-blue-500" data-slide="1"></button>
+        <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-blue-500" data-slide="2"></button>
+        <button class="w-3 h-3 mx-2 bg-gray-300 rounded-full lg:mx-0 focus:outline-none hover:bg-blue-500" data-slide="3"></button>
+        </div>
+
+        <!-- Contenido de slides -->
+        <div class="max-w-lg lg:mx-12 lg:order-2">
+
+        <!-- Slide 0 -->
+        <div class="slide" data-slide="0" style="display: block;">
+            <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+            (1) Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </h1>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </p>
+        </div>
+
+        <!-- Slide 1 -->
+        <div class="slide" data-slide="1" style="display: none;">
+            <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+            (2) Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </h1>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" data-slide="2" style="display: none;">
+            <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+            (3) Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </h1>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" data-slide="3" style="display: none;">
+            <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+            (4) Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </h1>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+            </p>
+        </div>
+
+        </div>
+
+        <!-- Imagen que cambia con el slide -->
+        <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
+        <img id="carousel-image" class="object-cover w-full h-full max-w-2xl rounded-md" src="IMG/imagen-molde.png" alt="imagen slide 1">
+        </div>
+    </div>
+    </header>
+
+
+
+    <section id="section-SobreNostros" class="scroll-mt-40 bg-white dark:bg-gray-900">
+        <div class="h-[32rem] bg-gray-100 dark:bg-gray-800 relative z-0">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Sobre Nosotros</h1>
+
+                <div class="flex justify-center mx-auto mt-6">
+                    <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                    <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                    <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+                </div>
+
+                <p class="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit quisque bibendum, ridiculus diam sodales curabitur proin vivamus lobortis aliquam dapibus, neque nam mauris luctus urna nulla egestas erat. Vitae neque senectus cras nec bibendum sociis, malesuada inceptos platea imperdiet egestas, velit eu volutpat dapibus netus. Primis sociis scelerisque mi vivamus aliquet elementum nisi mollis, faucibus hac platea ultricies curabitur nulla sollicitudin phasellus, diam blandit facilisi metus magna donec dictumst.
+                </p>
+            </div>
+        </div>
+
+        <div class="container px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96 relative z-10">
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+
+                <div class="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
+                    <img class="object-cover w-full rounded-xl aspect-square" src="IMG/imagen-molde.png" alt="">
+
+                    <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Nombre Apellidos</h1>
+
+                    <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">Cargo</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="section-Servicios" class="scroll-mt-40 bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Servicios</h1>
+
+            <p class="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
+                Ofrecemos atención personalizada con enfoque preventivo y litigioso, adaptándonos a las necesidades específicas de cada cliente en el marco de la legislación laboral chilena vigente.   
+            </p>
+
+            <div class="flex py-4 mt-4 overflow-x-auto overflow-y-hidden md:justify-center dark:border-gray-700">
+                <button
+                    data-tab="tab-trabajadores" class="h-12 px-8 py-2 -mb-px text-sm text-center text-blue-600 bg-transparent border-b-2 border-blue-500 sm:text-base dark:border-blue-400 dark:text-blue-300 whitespace-nowrap focus:outline-none">
+                    Servicios para trabajadores
+                </button>
+
+                <button
+                    data-tab="tab-empresas" class="h-12 px-8 py-2 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-gray-200 sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400">
+                    Servicios para empresas
+                </button>
+
+                <button
+                    data-tab="tab-especializados" class="h-12 px-8 py-2 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-gray-200 sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400">
+                    Servicios especializados
+                </button>
+
+            </div>
+
+            <!-- Tab 1: Servicio para trabajadores -->
+            <div class="tab-content" id="tab-trabajadores">
+
+                <section class="mt-8 space-y-8 lg:mt-12">
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Despidos y Terminación de Contratos</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Análisis de la legalidad del despido (necesidades de la empresa, desahucio, caso fortuito).</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Impugnación de despidos injustificados ante tribunales laborales.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Cálculo y cobro de indemnizaciones por años de servicio.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Revisión y negociación de finiquitos.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Recursos de nulidad por vicios en el procedimiento.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Vulneración de Derechos Fundamentales</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Acoso laboral (mobbing) y acoso sexual.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Discriminación por género, edad, orientación sexual, embarazo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Vulneración del derecho a la intimidad y vida privada.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Acciones de tutela de derechos fundamentales.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Accidentes del Trabajo y Enfermedades Profesionales.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Tramitación de denuncias ante organismos administradores.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Recursos contra negativas de cobertura.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Indemnizaciones por incapacidades permanentes.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Pensiones de invalidez y sobrevivencia.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Cobro de Prestaciones Laborales.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Recuperación de remuneraciones impagas.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Horas extraordinarias no pagadas.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Feriados legales y proporcionales.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Imposiciones previsionales no enteradas.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Indemnización sustitutiva del aviso previo.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+
+            <!-- Tab 2: Servicio para empresas -->
+            <div class="tab-content" id="tab-empresas">
+
+                <section class="mt-8 space-y-8 lg:mt-12">
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Asesoría en Gestión Laboral.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Elaboración y revisión de contratos de trabajo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Implementación de reglamentos internos</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Diseño de políticas de recursos humanos</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Asesoría en jornadas especiales y sistemas excepcionales</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Negociaciones Colectivas.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Preparación estratégica para procesos de negociación.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Representación en mesas negociadoras.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Elaboración de contratos colectivos.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Mediación y buenos oficios ante la Dirección del Trabajo.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Procesos Disciplinarios y Terminaciones.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Investigaciones internas por faltas laborales.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Procedimientos de despido por necesidades de la empresa.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Desahucios y finiquitos.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Defensa en juicios laborales.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Cumplimiento Normativo.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Auditorías de cumplimiento del Código del Trabajo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Implementación de protocolos de prevención de acoso.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Asesoría en fiscalizaciones de la Dirección del Trabajo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Capacitación en normativa laboral para equipos de RRHH.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Reorganizaciones Empresariales.</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Fusiones y adquisiciones con impacto laboral.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Reestructuraciones y cambios de razón social.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Transferencias de personal entre empresas relacionadas.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Planes de retiro voluntario.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+
+            <!-- Tab 3: Servicios especializados -->
+            <div class="tab-content" id="tab-especializados">
+
+                <section class="mt-8 space-y-8 lg:mt-12">
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Mediación Laboral</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Resolución alternativa de conflictos laborales.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Mediación prejudicial entre trabajadores y empleadores.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Facilitación de acuerdos extrajudiciales.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Representación ante Organismos</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Dirección del Trabajo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Inspección del Trabajo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Tribunales del Trabajo.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Superintendencia de Seguridad Social.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">SEREMI de Salud.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                    <section class="lg:flex lg:items-center">
+                        <div class="lg:w-1/2">
+                            <h2 class="mt-2 text-2xl font-semibold text-gray-800 capitalize dark:text-white">Consultoría Estratégica</h2>
+                            <ul class="list-disc pl-6 mt-4 space-y-2">
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Análisis de riesgos laborales.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Diseño de políticas preventivas.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Capacitación especializada en derecho laboral.</li>
+                                <li class="text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400">Acompañamiento en transformaciones digitales con impacto laboral.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 lg:w-1/2 lg:mt-0">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96" src="IMG/imagen-molde.png" alt="">
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="section-Contacto" class="scroll-mt-40 bg-white dark:bg-gray-900">
+        <div class="container px-6 py-12 mx-auto">
+            <div>
+
+                <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">¡Entra en contacto con nosotros!</h1>
+
+                <p class="mt-3 text-gray-500 dark:text-gray-400">Si tienes alguna inquietud, contáctanos a través de estos medios o completa el formulario y nos pondremos en contacto contigo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
+                <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+                    <div>
+                        <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                        </span>
+
+                        <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Vía correo electronico</h2>
+                        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Nos comunicaremos a través de correo electronico.</p>
+                        <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">ejemplo@dominio.com</p>
+                    </div>
+
+                    <a href="https://wa.me/56991373695" target="_blank" rel="noopener noreferrer">
+                        <div>
+                            <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                                <!-- Ícono de WhatsApp -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="w-5 h-5">
+                                    <path d="M380.9 97.1C339.1 55.3 283.1 32 224.1 32c-118.4 0-213.9 95.5-213.9 213.9 0 37.6 9.8 74.4 28.4 107l-29.7 108.7 111.6-29.3c31.1 16.9 66.3 25.9 103.6 25.9h.1c118.3 0 213.9-95.6 213.9-213.9 0-59-23-114.8-65.1-156.2zM224.1 438.7c-31.4 0-62.1-8.3-89-24l-6.4-3.8-66.2 17.4 17.7-64.6-4.2-6.6c-17.8-28-27.2-60.4-27.2-93.2 0-96.5 78.6-175.1 175.1-175.1 46.7 0 90.6 18.2 123.6 51.2s51.2 76.9 51.2 123.6c0 96.5-78.7 175.1-175.1 175.1zm101.4-138.1c-5.5-2.8-32.5-16-37.5-17.8-5-1.9-8.6-2.8-12.2 2.8s-14 17.8-17.2 21.5-6.3 4.2-11.7 1.4c-31.9-16-52.9-28.6-74.2-64.6-5.6-9.6 5.6-8.9 16-29.6 1.8-3.7.9-6.9-.5-9.7s-12.2-29.3-16.7-40c-4.4-10.5-8.9-9.1-12.2-9.3-3.1-.2-6.6-.2-10.1-.2s-9.3 1.3-14.1 6.9c-4.8 5.6-18.6 18.2-18.6 44.5s19.1 51.6 21.8 55.2c2.7 3.7 37.6 57.4 91.3 80.5 12.7 5.5 22.6 8.8 30.3 11.2 12.7 4 24.3 3.4 33.5 2 10.2-1.5 32.5-13.3 37.1-26.2 4.6-13 4.6-24.2 3.2-26.2-1.3-2.1-5-3.4-10.5-6.2z"/>
+                                </svg>
+                            </span>
+                            
+                            <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Vía WhatsApp</h2>
+                            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Estamos disponibles por WhatsApp.</p>
+                            <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">(+56) 9 0000 0000</p>
+                        </div>
+                    </a>
+
+
+                    <div>
+                        <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                        </span>
+                        
+                        <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Oficina</h2>
+                        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Te invitamos a acercarte a nuestra oficina.</p>
+                        <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">[Dirección]</p>
+                    </div>
+
+                    <div>
+                        <span class="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                        </span>
+                        
+                        <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Vía teléfono fijo</h2>
+                        <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Puedes llamarnos desde las 00:00 hasta las 00:00 los días XX a XX.</p>
+                        <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">(+56) 32 000 0000</p>
+                    </div>
+                </div>
+
+                <div class="p-4 py-6 rounded-lg bg-gray-50 dark:bg-gray-800 md:p-8">
+                    <form>
+                        <div class="-mx-2 md:items-center md:flex">
+                            <div class="flex-1 px-2">
+                                <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Nombre</label>
+                                <input type="text" placeholder="Benjamín" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="flex-1 px-2 mt-4 md:mt-0">
+                                <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Apellidos</label>
+                                <input type="text" placeholder="Sánchez Vega" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Correo electronico</label>
+                            <input type="email" placeholder="ejemplo@dominio.com" class="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                        </div>
+
+                        <div class="w-full mt-4">
+                            <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Mensaje</label>
+                            <textarea class="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Indicanos tu inquietud..."></textarea>
+                        </div>
+
+                        <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+            <a href="#section-Inicio">
+                <img class="w-auto h-7" src="IMG/logo-con-nombre-derecha.png" alt="">
+            </a>
+
+            <p class="text-sm text-gray-600 dark:text-gray-300">© 2025 [Empresa]. Todos los derechos reservados.</p>
+
+            <div class="flex -mx-2">
+                <a href="https://instagram.com" target="_blank"
+                    class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-400"
+                    aria-label="Instagram">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 2C4.57436 2 2 4.57436 2 7.75V16.25C2 19.4256 4.57436 22 7.75 22H16.25C19.4256 22 22 19.4256 22 16.25V7.75C22 4.57436 19.4256 2 16.25 2H7.75ZM12 7.5C14.4853 7.5 16.5 9.51472 16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5ZM18 6.5C18.5523 6.5 19 6.05228 19 5.5C19 4.94772 18.5523 4.5 18 4.5C17.4477 4.5 17 4.94772 17 5.5C17 6.05228 17.4477 6.5 18 6.5ZM12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5Z">
+                    </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('[data-tab]');
+        const tabs = document.querySelectorAll('.tab-content');
+
+        // Mostrar solo el primer tab y marcar el primer botón como activo al cargar la página
+        function initTabs() {
+            tabs.forEach((tab, i) => {
+            tab.style.display = i === 0 ? 'block' : 'none';
+            });
+            buttons.forEach((btn, i) => {
+            if (i === 0) {
+                setActive(btn);
+            } else {
+                setInactive(btn);
+            }
+            });
+        }
+
+        function setActive(button) {
+            button.classList.add('border-blue-500', 'text-blue-600', 'dark:border-blue-400', 'dark:text-blue-300');
+            button.classList.remove('border-gray-200', 'text-gray-700', 'dark:border-gray-700', 'dark:text-white', 'cursor-base', 'hover:border-gray-400', 'dark:hover:border-gray-400');
+        }
+
+        function setInactive(button) {
+            button.classList.remove('border-blue-500', 'text-blue-600', 'dark:border-blue-400', 'dark:text-blue-300');
+            button.classList.add('border-gray-200', 'text-gray-700', 'dark:border-gray-700', 'dark:text-white', 'cursor-base', 'hover:border-gray-400', 'dark:hover:border-gray-400');
+        }
+
+        initTabs();
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-tab');
+
+            tabs.forEach(tab => {
+                tab.style.display = tab.id === targetId ? 'block' : 'none';
+            });
+
+            buttons.forEach(btn => {
+                if (btn === button) {
+                setActive(btn);
+                } else {
+                setInactive(btn);
+                }
+            });
+            });
+        });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const sections = [
+            { id: 'section-Inicio', navLinkSelector: 'a[href="#section-Inicio"]' },
+            { id: 'section-SobreNostros', navLinkSelector: 'a[href="#section-SobreNostros"]' },
+            { id: 'section-Servicios', navLinkSelector: 'a[href="#section-Servicios"]' },
+            { id: 'section-Contacto', navLinkSelector: 'a[href="#section-Contacto"]' },
+        ];
+
+        const navLinks = sections.map(s => document.querySelector(s.navLinkSelector));
+
+        // Ajuste para scroll-margin-top (scroll-mt-40 = 160px)
+        const scrollMarginTop = 160;
+
+        function onScroll() {
+            const scrollPosition = (window.scrollY || window.pageYOffset) + scrollMarginTop;
+
+            let currentSectionIndex = 0;
+            for (let i = 0; i < sections.length; i++) {
+            const section = document.getElementById(sections[i].id);
+            if (!section) continue;
+
+            if (scrollPosition >= section.offsetTop) {
+                currentSectionIndex = i;
+            }
+            }
+
+            navLinks.forEach((link, idx) => {
+            if (!link) return;
+
+            if (idx === currentSectionIndex) {
+                // Activo
+                link.classList.add('border-blue-500', 'text-gray-800', 'dark:text-gray-200');
+                link.classList.remove('border-transparent', 'hover:text-gray-800', 'dark:hover:text-gray-200', 'hover:border-blue-500');
+            } else {
+                // Inactivo
+                link.classList.remove('border-blue-500', 'text-gray-800', 'dark:text-gray-200');
+                link.classList.add('border-transparent', 'hover:text-gray-800', 'dark:hover:text-gray-200', 'hover:border-blue-500');
+            }
+            });
+        }
+
+        window.addEventListener('scroll', onScroll);
+
+        // Ejecutar al cargar para marcar el inicial
+        onScroll();
+        });
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("button[data-slide]");
+    const slides = document.querySelectorAll(".slide");
+    const image = document.getElementById("carousel-image");
+
+    const images = [
+        "IMG/imagen-molde.png",       // Imagen del slide 0
+        "IMG/imagen-molde.png",      // Imagen del slide 1
+        "IMG/imagen-molde.png",      // Imagen del slide 2
+        "IMG/imagen-molde.png"       // Imagen del slide 3
+    ];
+
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    function showSlide(index) {
+        // Asegura que el índice esté dentro de rango
+        if (index >= slides.length) index = 0;
+        if (index < 0) index = slides.length - 1;
+
+        // Oculta todos los slides
+        slides.forEach(slide => slide.style.display = "none");
+        // Muestra el slide actual
+        slides[index].style.display = "block";
+
+        // Cambia la imagen
+        image.src = images[index];
+        image.alt = `imagen slide ${index + 1}`;
+
+        // Actualiza los botones
+        buttons.forEach((btn, i) => {
+        btn.classList.remove("bg-blue-500", "ring-2", "ring-blue-300");
+        btn.classList.add("bg-gray-300");
+
+        if (i === index) {
+            btn.classList.remove("bg-gray-300");
+            btn.classList.add("bg-blue-500", "ring-2", "ring-blue-300");
+        }
+        });
+
+        currentIndex = index;
+    }
+
+    // Manejador para los botones
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+        const index = parseInt(button.dataset.slide);
+        showSlide(index);
+        restartAutoSlide();
+        });
+    });
+
+    // Avanza automáticamente cada 5 segundos
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+        showSlide((currentIndex + 1) % slides.length);
+        }, 5000);
+    }
+
+    function restartAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Inicializa carrusel
+    showSlide(0);
+    startAutoSlide();
+    });
+    </script>
+
+
+
+</body>
+</html>
